@@ -12,84 +12,7 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"><![CDATA[>
-
-
-
-        ]]>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
-                android:layout_marginBottom="16dp"
-                android:gravity="center"
-                android:text="Team B"
-                android:textSize="25sp"
-                tools:ignore="HardcodedText" />
-
-            <TextView
-                android:id="@+id/textView4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="24dp"
-                android:gravity="center"
-                android:text="0"
-                android:textSize="65sp"
-                tools:ignore="HardcodedText" />
-
-            <Button
-                android:id="@+id/btn5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:background="#669966"
-                android:onClick="onClick"
-                android:text="+3" />
-
-            <Button
-                android:id="@+id/btn6"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:background="#669966"
-                android:onClick="onClick"
-                android:text="+2" />
-
-            <Button
-                android:id="@+id/btn7"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:background="#669966"
-                android:onClick="onClick"
-                android:text="+1" />
-
-            <Button
-                android:id="@+id/btn8"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:background="#669966"
-                android:onClick="onClick"
-                android:text="reset" />
-
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="2dp"
-            android:layout_height="match_parent"
-            android:background="#669966"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"/>
-
+        android:layout_height="wrap_content">
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -156,6 +79,79 @@
 
 
         </LinearLayout>
+
+
+        <TextView
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#669966"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:text="Team B"
+                android:textSize="25sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="65sp"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/btn5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="#669966"
+                android:onClick="onClick"
+                android:text="+3" />
+
+            <Button
+                android:id="@+id/btn6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="#669966"
+                android:onClick="onClick"
+                android:text="+2" />
+
+            <Button
+                android:id="@+id/btn7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="#669966"
+                android:onClick="onClick"
+                android:text="+1" />
+
+            <Button
+                android:id="@+id/btn8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="#669966"
+                android:onClick="onClick"
+                android:text="reset" />
+
+        </LinearLayout>
+
     </LinearLayout>
 
 
