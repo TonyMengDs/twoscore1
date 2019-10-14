@@ -3,11 +3,15 @@ package com.example.twoscore;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+
+    /*android:configChanges="orientation|keyboardHidden|screenSize"*/
+    private static final String TAG = "Main";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,7 +46,32 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         TextView text3 = findViewById(R.id.textView3);
         TextView text4 = findViewById(R.id.textView4);
+
     }
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+
+        super.onSaveInstanceState(outState);
+        String scorea = ((TextView)findViewById(R.id.textView2)).getText().toString();
+        String scoreb = ((TextView)findViewById(R.id.textView4)).getText().toString();
+        
+        Log.i(TAG, "onSaveInstanceState: ");
+        outState.putString("teama_score",scorea);
+        outState.putString("teamb_score",scoreb);
+
+    }
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState){
+        super.onRestoreInstanceState(savedInstanceState);
+        String scorea = savedInstanceState.getString("teama_score");
+        String scoreb = savedInstanceState.getString("teamb_score");
+
+        Log.i(TAG,"onRestoreInstanceState: ");
+        ((TextView)findViewById(R.id.textView2)).setText(scorea);
+        ((TextView)findViewById(R.id.textView4)).setText(scoreb);
+    }
+    
+    
 
     @Override
     public void onClick(View view) {

@@ -14,9 +14,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:padding="16dp"
+            android:layout_centerHorizontal="true"
             android:orientation="vertical">
 
             <TextView
@@ -44,8 +46,9 @@
 
                 <Button
                     android:id="@+id/btn1"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:layout_marginBottom="16dp"
                     android:background="#669966"
                     android:onClick="onClick"
@@ -53,8 +56,9 @@
 
                 <Button
                     android:id="@+id/btn2"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:layout_marginBottom="16dp"
                     android:background="#669966"
                     android:onClick="onClick"
@@ -62,8 +66,9 @@
 
                 <Button
                     android:id="@+id/btn3"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:layout_marginBottom="16dp"
                     android:background="#669966"
                     android:onClick="onClick"
@@ -73,6 +78,7 @@
                     android:id="@+id/btn4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:layout_marginBottom="16dp"
                     android:background="#669966"
                     android:onClick="onClick"
@@ -87,14 +93,16 @@
         <TextView
             android:layout_width="2dp"
             android:layout_height="match_parent"
-            android:background="#669966"
             android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"/>
+            android:layout_marginRight="8dp"
+            android:background="#669966" />
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:padding="16dp"
+            android:layout_centerHorizontal="true"
             android:orientation="vertical">
 
             <TextView
@@ -122,8 +130,9 @@
 
                 <Button
                     android:id="@+id/btn5"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:layout_marginBottom="16dp"
                     android:background="#669966"
                     android:onClick="onClick"
@@ -131,8 +140,9 @@
 
                 <Button
                     android:id="@+id/btn6"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:layout_marginBottom="16dp"
                     android:background="#669966"
                     android:onClick="onClick"
@@ -140,8 +150,9 @@
 
                 <Button
                     android:id="@+id/btn7"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:layout_marginBottom="16dp"
                     android:background="#669966"
                     android:onClick="onClick"
@@ -151,10 +162,12 @@
                     android:id="@+id/btn8"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:layout_marginBottom="16dp"
                     android:background="#669966"
                     android:onClick="onClick"
                     android:text="reset" />
+
             </LinearLayout>
 
         </LinearLayout>
